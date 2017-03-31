@@ -23,9 +23,9 @@ console.log(start)
       result2[k] = replaceWith;
     }
 
-    var mth = 15;
+    var nth = 15;
     var replaceWith = "ping-pong"
-    for (var m = mth; m < result2.length; m+=mth) {
+    for (var m = nth; m < result2.length; m+=nth) {
       result2[m] = replaceWith;
     }
 
