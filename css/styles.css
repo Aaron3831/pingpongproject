@@ -8,12 +8,23 @@ button {
   margin-bottom: 10%;
 }
 body {
-  color: #007231;
+  background-color: #3083ff;
 }
 .col-md-3 {
-  background: #cccccc;
+  background: #3083ff;
   margin-left: 15px;
 }
 .col-md-9 {
   float: right;
+}
+.row {
+  background: #22418e;
+  border-radius: 5px;
+  margin: 5px;
+}
+.jumbotron {
+  background: #22418e;
+}
+#h1 {
+  color: white;
 }
