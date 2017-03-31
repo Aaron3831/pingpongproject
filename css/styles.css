@@ -7,3 +7,13 @@ p {
 button {
   margin-bottom: 10%;
 }
+body {
+  color: #007231;
+}
+.col-md-3 {
+  background: #cccccc;
+  margin-left: 15px;
+}
+.col-md-9 {
+  float: right;
+}
