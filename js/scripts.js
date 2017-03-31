@@ -9,8 +9,12 @@ console.log(start)
   var result = [];
   for (var i = 0; i<start+1; ++i) result.push(i)
   console.log(result);
+    var result2 = result;
+    for (var j = 0; j < result.length; j++) {
+      result2.splice(j+3);
+    }
 
-  $('#result').text(result)
+  $('#result').text(result2)
 
     // function range (start, end) {
     //
