@@ -13,7 +13,7 @@ body {
 }
 .col-md-3 {
   background: #3083ff;
-  margin-left: 15px;
+  width: 100%;  
 }
 .col-md-9 {
   float: right;
