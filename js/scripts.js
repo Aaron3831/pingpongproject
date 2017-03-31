@@ -1,17 +1,19 @@
 $(document).ready(function() {
   $("form#pingpong").submit(function(event) {
-    event.preventDefault();
+      event.preventDefault();
 
-  var numberInput = parseInt($("input#number").val());
+  var numberInput = parseInt($("input#numbers").val());
+  var result = arrayReturn
 
-  function range0 (n) {
-    // create a array, from 0 to n, including n
-    var m = n+1;
-    var arr = Array(m);
-    for (var ii = 0; ii < m; ii++) { arr[ii] = ii; };
-    return arr;
-  }
-  console.log( range0(10) ); // [ 0, 1, 2, 3]
+  function range (numberInput) {
+    // create an array, from 0 to input, including input
+    var m = numberInput+1;
+    var arrayReturn = Array(m);
+    for (var i = 0; i < m; i++) { arrayReturn[i] = i; }
+    return arrayReturn
+
+  console.log( range(10) ) //[ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+
   //
   // var outputPing = function(numberInput) {
   //   if (numberInput % 3 === 0)
@@ -23,4 +25,6 @@ $(document).ready(function() {
   //
   // }
   // for (var i = 0; index < numberInput; index +=1;)
+    };
+  });
 });
