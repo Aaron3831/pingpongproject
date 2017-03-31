@@ -34,7 +34,7 @@ _BDD:
 
 ## Setup/Installation Requirements
 
-* _View the .html file in any modern browser: https://aaron3831.github.io/independentprojectweek1/_
+* _View the .html file in any modern browser: https://aaron3831.github.io/pingpongproject/_
 
 ## Known Bugs
 

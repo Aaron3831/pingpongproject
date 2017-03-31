@@ -10,18 +10,27 @@
   </head>
   <body>
     <div class="container">
-      <h1>Ping pong</h1>
-      <form id="pingpong">
-        <div class="form-group">
-          <label for="start">Enter a number where you want to begin: </label>
-          <input id="start" type="text">
+      <div class="jumbotron">
+        <h1>Ping pong</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <form id="pingpong">
+            <div class="form-group">
+              <label for="start">Enter a number to begin: </label>
+              <input id="start" type="text">
+            </div>
+            <button type="submit" class="btn btn-default">Play!</button>
+          </form>
+          <div>
+            <p>
+              <span id="result"></span>
+            </p>
+          </div>
         </div>
-        <button type="submit" class="btn">Play!</button>
-      </form>
-      <div>
-        <ul id="result">
+        <div class="col-md-9">
 
-        </ul>
+        </div>
       </div>
     </div>
   </body>
