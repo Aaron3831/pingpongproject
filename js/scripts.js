@@ -2,29 +2,25 @@ $(document).ready(function() {
   $("form#pingpong").submit(function(event) {
       event.preventDefault();
 
-  var numberInput = parseInt($("input#numbers").val());
-  var result = arrayReturn
+  var start = parseInt($("input#start").val());
 
-  function range (numberInput) {
-    // create an array, from 0 to input, including input
-    var m = numberInput+1;
-    var arrayReturn = Array(m);
-    for (var i = 0; i < m; i++) { arrayReturn[i] = i; }
-    return arrayReturn
+console.log(start)
 
-  console.log( range(10) ) //[ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+  var result = [];
+  for (var i = 0; i<start+1; ++i) result.push(i)
+  console.log(result);
 
-  //
-  // var outputPing = function(numberInput) {
-  //   if (numberInput % 3 === 0)
-  //     else if (math.range(0, numberInput, true);
-  //
-  // }
-  // var outputPong = function(numberInput) {
-  //   if (numberInput % 5 === 0)
-  //
-  // }
-  // for (var i = 0; index < numberInput; index +=1;)
-    };
+  $('#result').text(result)
+
+    // function range (start, end) {
+    //
+    //   var array = new Array();
+    //   for(var i = start; i < end+1; i++);
+    //   {
+    //     array.push(i);
+    //   };
+    //   return [array];
+    // };
+
   });
 });
