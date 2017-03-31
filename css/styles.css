@@ -13,7 +13,7 @@ body {
 }
 .col-md-3 {
   background: #3083ff;
-  width: 100%;  
+  width: 100%;
 }
 .col-md-9 {
   float: right;
@@ -27,5 +27,17 @@ body {
   background: #22418e;
 }
 #h1 {
+  color: white;
+}
+ul {
+  color: white;
+  font-size: 20px;
+  list-style-type: none;
+  margin-top: 10%;
+}
+#textcolorwhite {
+  color: white;
+}
+a {
   color: white;
 }
