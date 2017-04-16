@@ -1,0 +1,21 @@
+class Fixnum
+  define_method(:pingPong) do
+    returnPingPong = []
+    (0..self).each() do |number|
+      if number == 0 #Ignore 0
+        returnPingPong.push(number)
+      elsif number.%(15) == 0
+        returnPingPong.push("ping-pong")
+      elsif number.%(5) == 0
+        returnPingPong.push("pong")
+      elsif number.%(3) == 0
+        returnPingPong.push("ping")
+      else
+        returnPingPong.push(number)
+      end
+    end
+    returnPingPong
+  end
+end
+
+30.pingPong() => [0, 1, 2, "ping", 4, "pong", "ping", 7, 8, "ping", "pong", 11, "ping", 13, 14, "ping-pong", 16, 17, "ping", 19, "pong", "ping", 22, 23, "ping", "pong", 26, "ping", 28, 29, "ping-pong"]
